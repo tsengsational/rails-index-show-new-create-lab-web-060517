@@ -13,7 +13,6 @@ class CouponsController < ApplicationController
   end
 
   def create
-    byebug
     @coupon = Coupon.create(coupon_params)
     redirect_to coupon_path(@coupon)
   end
